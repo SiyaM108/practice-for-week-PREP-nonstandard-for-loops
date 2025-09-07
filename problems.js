@@ -34,8 +34,15 @@ function secondPower(arr) {
 }
 
 function nthPower(arr, n) {
-    // Return an array containing all indices that are powers of n
-    // Your code here
+    let result = [];
+    let power = 1;
+
+    while (power < arr.length) {
+        result.push(arr[power]);
+        power *= n;
+    }
+
+    return result;
 }
 
 function firstHalf(arr) {
