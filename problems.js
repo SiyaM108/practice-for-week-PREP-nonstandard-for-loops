@@ -23,8 +23,14 @@ function oddReverse(arr) {
 }
 
 function secondPower(arr) {
-    // Return an array containing all indices that are powers of 2
-    // Your code here
+    // Return an array containing all elements at indices that are powers of 2
+    let result = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (i !== 0 && (i & (i - 1)) === 0) {
+            result.push(arr[i]);
+        }
+    }
+    return result;
 }
 
 function nthPower(arr, n) {
