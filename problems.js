@@ -13,6 +13,13 @@ function oddIndices(arr) {
 function oddReverse(arr) {
     // Return an array containing all the odd indices starting from the end
     // Your code here
+    let result = [];
+    for(let i = arr.length - 1; i >= 0; i--) {
+        if(i % 2 !== 0) {
+            result.push(arr[i]);
+        }
+    }
+    return result;
 }
 
 function secondPower(arr) {
