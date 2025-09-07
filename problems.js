@@ -49,6 +49,12 @@ function firstHalf(arr) {
     // Return an array containing the first half of an array
     // Include middle index on odd length arr
     // Your code here
+    let mid = Math.ceil(arr.length / 2);
+    let result = [];
+    for (let i = 0; i < mid; i++) {
+        result.push(arr[i]);
+    }
+    return result;
 }
 
 function secondHalf(arr) {
